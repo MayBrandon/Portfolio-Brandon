@@ -6,44 +6,156 @@
     font-size: 1.105em;
 }
 
-.header {
+.header  {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    /* border: 5px dashed white; */
+    backdrop-filter: blur(5px);
 }
 
-.div-logo {
+body {
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background-image: url(/assets/img/background2.jpg); */
+
+    background-repeat: no-repeat;
+}
+
+#logo {
+    font-size: 35px;
+    color: white;
+    border: 5px dashed white;
+    transition: ease-in-out .2s;
+}
+
+#logo:hover {
+    background-color: rgb(242, 129, 0);
+    animation: .3s linear .3s infinite leftToRight ;
+    content: "Oui c'est cool";
+}
+
+.navbar  {
     display: flex;
-}
-
-.logo {
-    font-size: 45px;
-    font-family: 'VT323', monospace;
-    text-decoration: underline;
-}
-
-.navbar {
-    display: flex;
+    justify-content: space-between ;
     align-items: center;
 }
 
-.nav-menu {
-    color: black;
-    text-decoration: none;
-    margin: 25px;
+.nav-menu  {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    gap: 60px;
 }
 
-.active {
-    text-decoration: 1px underline;
+.hamburger {
+    display: none;
+    cursor: pointer;
 }
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: white;
+}
+
+/* LES LIENS ACCUEIL / PROJETS / CONTACT */
+
+.nav-link {
+    transition: .7s ease;
+}
+
+li {
+    font-size: 1.105em;
+    gap: 0px 10px;
+    list-style: none;
+}   
+
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li > a:hover {
+    color: rgb(242, 129, 0);
+    text-decoration: 4px underline dashed ;
+}
+
+@media (max-width: 768px) {
+
+    
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger .active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger .active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger .active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        right: 10px;
+        background-color: darkgrey;
+        border-radius: 15px;
+        padding: 36px 150px;
+        border: 4px dashed white;
+    }   
+
+    .div-body-up {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .presentation {
+        display: flex;
+        align-items: center;
+    }
+
+    .para-1 {
+        text-align: center;
+    }
+}
+
 
 .cloud-repo {
     width: 40px;
+    color: white;
 }
 
 .main-body {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 96px;
+    background: linear-gradient(a);
+    /* background-image: url(/assets/img/background.jpg); */
+
 }
 
 
@@ -58,8 +170,7 @@
     animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
     margin: 50px;
-    border: 7px solid black;
-
+    border: 7px solid rgba(197, 197, 197, 0.145);
 }
 
 @keyframes animate {
@@ -86,6 +197,9 @@
 .div-body-up {
     display: flex;
     align-items: center;
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 0.359); */
+    backdrop-filter: blur(10px);
 }
 
 .wrapper {
@@ -98,16 +212,23 @@
     font-size: 55px;
     margin: 0;
     letter-spacing: 2px;
+    color: white;
+    text-decoration-style: 2px double;
 }
 
 .infos-para {
     margin: 0;
-    color: rgb(156, 156, 156);
+    color: rgb(232, 244, 10);
 
 }
 
 .para-1 {
     font-size: 30px;
+    color: white    ;
+}
+
+.language {
+    color: white;
 }
 
 .logo-language {
@@ -157,10 +278,11 @@
     flex-direction: column;
 }
 
-.title-parcours {
+.title-projet {
     font-size: 45px;
     text-align: center;
     letter-spacing: 2px;
+    color: white  ;
 }
 
 /* <!-- MES PROJETS --> */
@@ -186,3 +308,4 @@
 .div-project-1 {
     margin: 10px;
 }
+
