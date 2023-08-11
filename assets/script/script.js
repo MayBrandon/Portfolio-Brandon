@@ -19,3 +19,6 @@ const photoBrandon = document.getElementById("photo");
 photoBrandon.addEventListener("click", () => {
 	alert("Ouch ca fait mal !");
 });
+
+
+

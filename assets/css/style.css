@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'VT323', monospace;
     font-size: 1.105em;
+    margin: 5px;
 }
 
 .header  {
@@ -123,24 +124,28 @@ li > a:hover {
         right: 10px;
         background-color: darkgrey;
         border-radius: 15px;
-        padding: 36px 150px;
+        padding: 10px 70px;
         border: 4px dashed white;
+        margin: 0;
     }   
 
     .div-body-up {
-        display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .presentation {
         display: flex;
         align-items: center;
+        
     }
 
     .para-1 {
         text-align: center;
     }
+
+    
 }
 
 
@@ -170,7 +175,7 @@ li > a:hover {
     animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
     margin: 50px;
-    border: 7px solid rgba(197, 197, 197, 0.145);
+    border: 7px solid rgb(255, 255, 255);
 }
 
 @keyframes animate {
@@ -199,7 +204,6 @@ li > a:hover {
     align-items: center;
     border-radius: 10px;
     /* background-color: rgba(255, 255, 255, 0.359); */
-    backdrop-filter: blur(10px);
 }
 
 .wrapper {
@@ -226,6 +230,7 @@ li > a:hover {
     font-size: 30px;
     color: white    ;
 }
+
 
 .language {
     color: white;
@@ -289,11 +294,14 @@ li > a:hover {
 
 
 .external {
-    margin-top: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 100px; */
 }
 
-.square {
-    margin-top: 50px;
+#square1, #square2, #square3, #square4 {
+    /* margin-top: 50px; */
     height: 250px;
     width: 250px;
     background: black;
