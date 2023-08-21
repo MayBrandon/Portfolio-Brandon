@@ -17,10 +17,9 @@
 
 body {
     background: #BBD2C5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e01919, #e84f03); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: -webkit-linear-gradient(to right, #000000, #BBD2C5);  Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff0101, #f89900); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* background-image: url(/assets/img/background2.jpg); */
-
     background-repeat: no-repeat;
 }
 
@@ -75,7 +74,7 @@ li {
     font-size: 1.105em;
     gap: 0px 10px;
     list-style: none;
-}   
+}
 
 
 li a {
@@ -89,8 +88,6 @@ li > a:hover {
 
 @media (max-width: 957px) {
 
-    
-
     .hamburger {
         display: block;
     }
@@ -98,9 +95,11 @@ li > a:hover {
     .hamburger .active .bar:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger .active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
+
     .hamburger .active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -114,7 +113,6 @@ li > a:hover {
         flex-direction: column;
         text-align: center;
         transition: ease-in-out .2s ;
-
     }
 
     .nav-item {
@@ -129,7 +127,7 @@ li > a:hover {
         padding: 10px 70px;
         border: 4px dashed white;
         margin: 0;
-    }   
+    }
 
     .div-body-up {
         flex-direction: column;
@@ -140,14 +138,12 @@ li > a:hover {
     .presentation {
         display: flex;
         align-items: center;
-        
     }
 
     .para-1 {
         text-align: center;
     }
 
-    
 }
 
 
@@ -355,12 +351,20 @@ li > a:hover {
 
 .btn {
     color: white;
-
 }
 
 .btn.btn-success {
     background-color: rgba(215, 14, 14, 0.753);
 }
+.btn.btn-success:hover {
+    background-color: rgba(215, 14, 14, 0.49);
+    cursor: pointer;
+}
+
 .btn.btn-deny {
     background-color: rgba(215, 14, 14, 0.753);
+}
+.btn.btn-deny:hover {
+    background-color: rgba(215, 14, 14, 0.49);
+    cursor: pointer;
 }

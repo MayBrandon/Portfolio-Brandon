@@ -22,5 +22,5 @@ let btnSuccess = document.querySelector(".btn-success");
 
 btnSuccess.addEventListener("click", () => {
 	console.log("click");
-	cookies.style.opacity = "0";
+	cookies.style.visibility = "hidden";
 })
