@@ -8,12 +8,27 @@
 		<title>Portfolio - Brandon</title>
 	</head>
 	<body>
+
+        <div class="cookies">
+            <div class="cookies-texte">
+                <p class="text-cookies">En poursuivant, vous acceptez l'utilisation des cookies par le site afin de vous proposer des contenus adaptés et réaliser des statistiques.
+                </p>
+            </div>
+            <div class="cookies-btn">
+                <button class="btn btn-success">
+                    Accepter les cookies
+                </button>
+                <button class="btn btn-deny">
+                    Paramètres des cookies
+                </button>
+            </div>
+        </div><!-- Fermeture cookies -->
+
 		<header id="header" class="header">
 			<div class="divlogo">
 				<h1 id="logo">!BRANDON!</h1>
 			</div>
 			<nav id="nav-bar">
-				<a href="#" class="nav-branding"></a>
 				<ul class="nav-menu">
 					<li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
 					<li class="nav-item"><a class="nav-link" href="projets.php">Projets</a></li>
@@ -27,10 +42,12 @@
 						/></a>
 					</li>
 				</ul>
+
 				<div class="hamburger">
 					<span class="bar"></span>
 					<span class="bar"></span>
 					<span class="bar"></span>
+                   
 				</div>
 			</nav>
 		</header>
@@ -39,7 +56,7 @@
 
     <div class="main-body">
         <div class="div-body-up">
-            <div class="wrapper">
+            <div id="photo" class="wrapper">
                 <div class="div-box"></div>
             </div>
             <div class="presentation">
@@ -81,21 +98,24 @@
             <h1 class="title-projet" >Mes Projets</h1>
             <div class="div-project">
                 <div class="div-project-1">
-                    <div class="square"></div>
+                    <div id="square1"><a href="https://github.com/MayBrandon/The_District-district" target="_blank" class="projectLink">The District Restaurant</a></div>
                 </div>
                 <div class="div-project-1">
-                    <div class="square"></div>
+                    <div id="square2"><a href="https://github.com/MayBrandon/jarditou_bootstrap target="_blank" class="projectLink">Jarditou - Bootstrap</a></div>
                 </div>
                 <div class="div-project-1">
-                    <div class="square"></div>
+                    <div id="square3"><a href="http://github.com" target="_blank" class="projectLink">Github</a></div>
                 </div>
                 <div class="div-project-1">
-                    <div class="square"></div>
+                    <div id="square4"><a href="http://github.com" target="_blank" class="projectLink">Github</a></div>
                 </div>
             </div>
         </div>
+
+        
         
     </div>
+    
     <script src="/assets/script/script.js"></script>
 </body>
 </html> 

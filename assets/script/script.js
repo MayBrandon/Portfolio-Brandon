@@ -4,6 +4,7 @@ const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", () => {
 	hamburger.classList.toggle("active");
 	navMenu.classList.toggle("active");
+	
 });
 
 document.querySelectorAll(".nav-link").forEach((n) =>
@@ -13,12 +14,13 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 	})
 );
 
-//Clique sur la photo
-const photoBrandon = document.getElementById("photo");
+//COOKIES 
 
-photoBrandon.addEventListener("click", () => {
-	alert("Ouch ca fait mal !");
-});
+let cookies = document.querySelector(".cookies");
 
+let btnSuccess = document.querySelector(".btn-success");
 
-
+btnSuccess.addEventListener("click", () => {
+	console.log("click");
+	cookies.style.opacity = "0";
+})
