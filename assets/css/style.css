@@ -86,6 +86,7 @@ li > a:hover {
     color: rgb(255, 136, 0);
 }
 
+
 @media (max-width: 957px) {
 
     .hamburger {
@@ -302,7 +303,7 @@ li > a:hover {
     /* margin-top: 50px; */
     height: 250px;
     width: 250px;
-    background: black;
+    background-image: url('..\..\assets\img_projet\district.png');
 }
 
 .div-project {
@@ -312,6 +313,7 @@ li > a:hover {
 }
 
 .div-project-1 {
+    display: flex;
     margin: 10px;
 }
 

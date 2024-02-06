@@ -16,7 +16,6 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 
 
 //COOKIES 
-
 let cookies = document.querySelector(".cookies");
 
 let btnSuccess = document.querySelector(".btn-success");
